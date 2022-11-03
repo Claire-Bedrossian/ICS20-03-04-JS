@@ -19,13 +19,15 @@ if (navigator.serviceWorker) {
  * This function converts degrees fahrenheit to degrees celsius.
  */
 function myButtonClicked() {
-    // input
-    const fahrenheit = parseFloat(document.getElementById("fahrenheit-number").value)
+  // input
+  const fahrenheit = parseFloat(
+    document.getElementById("fahrenheit-number").value
+  )
 
-    //process
-    const celsius = (fahrenheit - 32) * 5 / 9
-  
-    // output
-    document.getElementById("degrees-celsius").innerHTML =
-      "Degrees celsius is equal to: " + celsius + " °C"
+  //process
+  const celsius = ((fahrenheit - 32) * 5) / 9
+
+  // output
+  document.getElementById("degrees-celsius").innerHTML =
+    "Degrees celsius is equal to: " + celsius + " °C"
 }
